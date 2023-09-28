@@ -141,6 +141,12 @@ namespace LYA1_Lexico2
                         break;
 
                     case 14:
+                        setClasificacion(Tipos.OperadorLogico);
+                         if (!char.IsDigit(c))
+                            estado = 15;
+                        else if (c == '!' || c == '=')
+                            estado = F;
+                        break;
 
                     case 15:
 
