@@ -1,0 +1,14 @@
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\bin\Debug\net7.0\LYA1_Lexico 2.exe
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\bin\Debug\net7.0\LYA1_Lexico 2.deps.json
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\bin\Debug\net7.0\LYA1_Lexico 2.runtimeconfig.json
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\bin\Debug\net7.0\LYA1_Lexico 2.dll
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\bin\Debug\net7.0\LYA1_Lexico 2.pdb
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\LYA1_Lexico 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\LYA1_Lexico 2.AssemblyInfoInputs.cache
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\LYA1_Lexico 2.AssemblyInfo.cs
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\LYA1_Lexico 2.csproj.CoreCompileInputs.cache
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\LYA1_Lexico 2.dll
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\refint\LYA1_Lexico 2.dll
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\LYA1_Lexico 2.pdb
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\LYA1_Lexico 2.genruntimeconfig.cache
+C:\Users\metal\OneDrive\Escritorio\Semestre XI\Lenguajes Y Automatas I\LYA1_Lexico 2\obj\Debug\net7.0\ref\LYA1_Lexico 2.dll
