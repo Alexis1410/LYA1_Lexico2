@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\LYA1_Lexico 2.csproj": {}
+    "c:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\LYA1_Lexico 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\LYA1_Lexico 2.csproj": {
+    "c:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\LYA1_Lexico 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\LYA1_Lexico 2.csproj",
+        "projectUniqueName": "c:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\LYA1_Lexico 2.csproj",
         "projectName": "LYA1_Lexico 2",
-        "projectPath": "C:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\LYA1_Lexico 2.csproj",
+        "projectPath": "c:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\LYA1_Lexico 2.csproj",
         "packagesPath": "C:\\Users\\metal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\obj\\",
+        "outputPath": "c:\\Users\\metal\\OneDrive\\Escritorio\\Semestre XI\\Lenguajes Y Automatas I\\LYA1_Lexico 2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\metal\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -143,28 +143,86 @@ namespace LYA1_Lexico2
                     case 14:
                         setClasificacion(Tipos.OperadorLogico);
                          if (!char.IsDigit(c))
-                            estado = 15;
-                        else if (c == '!' || c == '=')
                             estado = F;
                         break;
 
                     case 15:
+                        setClasificacion(Tipos.OperadorRelacional);
+                         if (!char.IsDigit(c))
+                            estado = F;
+                            break;
 
                     case 16:
+                    setClasificacion(Tipos.OperadorRelacional);
+                         if (!char.IsDigit(c))
+                            estado = 18;
+                        else if (c == '<' || c == '=')
+                            estado = F;
+                        break;
 
                     case 17:
+                        setClasificacion(Tipos.OperadorRelacional);
+                         if (!char.IsDigit(c))
+                             estado = 18;
+                        else if (c == '<' || c == '=')
+                            estado = F;
+                        break;
+
                     case 18:
+                        if(!char.IsDigit(c))
+                       estado = F;
+                        break;   
                     case 19:
+                            setClasificacion(Tipos.OperadorIncrementofactor);
+                         if (!char.IsDigit(c))
+                             estado = 21;
+                        else if (c == '+' || c == '=')
+                            estado = F;
+                        break;
                     case 20:
+                         setClasificacion(Tipos.OperadorIncrementofactor);
+                         if (!char.IsDigit(c))
+                             estado = 21;
+                        else if (c == '-' || c == '=')
+                            estado = F;
+                        break;
+
                     case 21:
+                        if(!char.IsDigit(c))
+                        estado = F;
+                        break;   
                     case 22:
+                         setClasificacion(Tipos.OperadorFactor);
+                         if ( c == '=')
+                             estado = 23;
+                        else
+                        estado = F;
+                        break;     
                     case 23:
+                        setClasificacion(Tipos.OperadorIncrementofactor);
+                        estado = F;
+                        break;    
                     case 24:
+                        setClasificacion(Tipos.OperadorTernario);
+                         if ( c == '?')
+                        estado = F;
+                        break;    
                     case 25:
+                         setClasificacion(Tipos.Cadena);
+                         if ( c == '"')
+                          estado = 26;
+                          else
+                        estado = E;
+                        break;
                     case 26:
+                        setClasificacion(Tipos.Cadena);
+                        estado = F;
+                        break;  
                     case 27:
-                    case 28:
-                    case 29:    
+                    setClasificacion(Tipos.Caracter);
+                        estado = F;
+                        break;  
+                     
                     
                 }
                 if (estado >= 0)
