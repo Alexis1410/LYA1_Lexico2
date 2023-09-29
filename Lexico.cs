@@ -106,35 +106,34 @@ namespace LYA1_Lexico2
                         break;
                     case 9:
                         if (!char.IsDigit(c))
-                        estado = F;
-                        else 
+                            estado = F;
+                        else
                             estado = 8;
                         break;
-
                     case 10:
-                        if(!char.IsDigit(c))
-                       estado = F;
+                        setClasificacion(Tipos.finSentencia);
+                        if (!char.IsDigit(c))
+                            estado = F;
                         break;
-                    
                     case 11:
-                         setClasificacion(Tipos.Caracter);
-                         if (!char.IsDigit(c))
+                        setClasificacion(Tipos.Caracter);
+                        if (!char.IsDigit(c))
                             estado = 14;
                         else if (c == '&' || c == 'λ')
                             estado = F;
                         break;
 
                     case 12:
-                         setClasificacion(Tipos.Caracter);
-                         if (!char.IsDigit(c))
+                        setClasificacion(Tipos.Caracter);
+                        if (!char.IsDigit(c))
                             estado = 14;
                         else if (c == '|' || c == '|')
                             estado = F;
                         break;
 
                     case 13:
-                     setClasificacion(Tipos.Identificador);
-                         if (!char.IsDigit(c))
+                        setClasificacion(Tipos.OperadorLogico);
+                        if (!char.IsDigit(c))
                             estado = 15;
                         else if (c == '!' || c == '=')
                             estado = F;
@@ -142,19 +141,19 @@ namespace LYA1_Lexico2
 
                     case 14:
                         setClasificacion(Tipos.OperadorLogico);
-                         if (!char.IsDigit(c))
+                        if (!char.IsDigit(c))
                             estado = F;
                         break;
 
                     case 15:
                         setClasificacion(Tipos.OperadorRelacional);
-                         if (!char.IsDigit(c))
+                        if (!char.IsDigit(c))
                             estado = F;
-                            break;
+                        break;
 
                     case 16:
-                    setClasificacion(Tipos.OperadorRelacional);
-                         if (!char.IsDigit(c))
+                        setClasificacion(Tipos.OperadorRelacional);
+                        if (!char.IsDigit(c))
                             estado = 18;
                         else if (c == '<' || c == '=')
                             estado = F;
@@ -162,74 +161,73 @@ namespace LYA1_Lexico2
 
                     case 17:
                         setClasificacion(Tipos.OperadorRelacional);
-                         if (!char.IsDigit(c))
-                             estado = 18;
+                        if (!char.IsDigit(c))
+                            estado = 18;
                         else if (c == '<' || c == '=')
                             estado = F;
                         break;
 
                     case 18:
-                        if(!char.IsDigit(c))
-                       estado = F;
-                        break;   
+                        if (!char.IsDigit(c))
+                            estado = F;
+                        break;
                     case 19:
-                            setClasificacion(Tipos.OperadorIncrementofactor);
-                         if (!char.IsDigit(c))
-                             estado = 21;
+                        setClasificacion(Tipos.OperadorTermino);
+                        if (!char.IsDigit(c))
+                            estado = 21;
                         else if (c == '+' || c == '=')
                             estado = F;
                         break;
                     case 20:
-                         setClasificacion(Tipos.OperadorIncrementofactor);
-                         if (!char.IsDigit(c))
-                             estado = 21;
-                        else if (c == '-' || c == '=')
+                        setClasificacion(Tipos.OperadorTermino);
+                        if (!char.IsDigit(c))
+                            estado = 21;
+                        else if (c == '=' || c == 'λ')
                             estado = F;
                         break;
 
                     case 21:
-                        if(!char.IsDigit(c))
-                        estado = F;
-                        break;   
+                        setClasificacion(Tipos.OperadorIncrementoTermino);
+                        if (!char.IsDigit(c))
+                            estado = F;
+                        break;
                     case 22:
-                         setClasificacion(Tipos.OperadorFactor);
-                         if ( c == '=')
-                             estado = 23;
+                        setClasificacion(Tipos.OperadorFactor);
+                        if (c == '=')
+                            estado = 23;
                         else
-                        estado = F;
-                        break;     
+                            estado = F;
+                        break;
                     case 23:
                         setClasificacion(Tipos.OperadorIncrementofactor);
                         estado = F;
-                        break;    
+                        break;
                     case 24:
                         setClasificacion(Tipos.OperadorTernario);
-                         if ( c == '?')
-                        estado = F;
-                        break;    
+                        if (c == '?')
+                            estado = F;
+                        break;
                     case 25:
-                         setClasificacion(Tipos.Cadena);
-                         if ( c == '"')
-                          estado = 26;
-                          else
-                        estado = E;
+                        setClasificacion(Tipos.Cadena);
+                        if (c == '"')
+                            estado = 26;
+                        else
+                            estado = E;
                         break;
                     case 26:
                         setClasificacion(Tipos.Cadena);
                         estado = F;
-                        break;  
+                        break;
                     case 27:
-                    setClasificacion(Tipos.Caracter);
+                        setClasificacion(Tipos.Caracter);
                         estado = F;
-                        break;  
-                     
-                    
+                        break;
                 }
                 if (estado >= 0)
                 {
                     if (estado > 0)
                     {
-                        buffer += c;    
+                        buffer += c;
                     }
                     archivo.Read();
                 }
